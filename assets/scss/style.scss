@@ -1,0 +1,142 @@
+@import '../css/reset';
+
+$width:1440;
+$height-img1:650;
+$saumon:#F78065;
+
+.padding-width-firstbox {
+  padding-left: 64px;
+  width:450px;
+}
+
+body {
+  margin:0 auto;
+  width:$width+px;
+}
+
+header {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  .img1 {
+    width:$width+px;
+    height:$height-img1+px;
+  }
+}
+
+.img2 {
+  position:relative;
+  top:-578px;
+  left:122px;
+}
+
+.img3 {
+  display:flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  width:86px;
+  height:53px;
+  top:-659px;
+  left:1232px;
+  background-color: white;
+  border-radius: 30px;
+    & .img-3-1 {
+        width:24px;
+        height:24px;
+    }
+    & .img-3-2 {
+        width:32px;
+        height:32px;
+    }
+}
+
+main {
+  transform: translate(0px, -87px);
+  background-color: #F9F9F9;
+  .first-block {
+    position:relative;
+    top:-268px;
+    left:65px;
+    width:741px;
+    height:537px;
+    background-color: white;
+        & h1{
+          @extend .padding-width-firstbox;
+          font-weight: bold;
+          padding-top:96px;
+          font-size:39px;
+          height:147px;
+          line-height: 49,02px;
+            & .colored{
+              color:$saumon;
+              background-color: white;
+            }
+        }
+        & .first-block-1{
+          @extend .padding-width-firstbox;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #000000;
+          opacity: 0.6;
+        }
+        & .first-block-2{
+          display:flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+          margin-left:64px;
+          margin-top:20px;
+          width:250px;
+          height:65px;
+          background-color:$saumon;
+          color:white;
+        }
+  }
+
+  .reset-position-relative {
+    position:relative;
+    top:-143px;
+  }
+
+  .second-block {
+    padding-left: 119px;
+    display:flex;
+    flex-flow: row wrap;
+        & section {
+          width:386px;
+          padding-right:41px;
+        }
+        & h2 {
+          padding-top:84px;
+          font-size:24px;
+          font-weight:700;
+          line-height: 30,17px;
+        }
+        & p {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 20px;
+          color: rgba(0, 0, 0, 0.5);
+          padding-top: 24px;
+        }
+        & .colore{
+          color:$saumon;
+        }
+  }
+
+  .third-block {
+    padding-left: 100px;
+    padding-top: 240px;
+      & h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        padding-bottom: 108px;
+      }
+
+  }
+
+}
